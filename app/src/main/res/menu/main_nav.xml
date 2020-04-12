@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/btn_player1"
+        android:icon="@drawable/ic_looks_one_black_24dp"
+        android:title="player1"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/btn_player2"
+        android:icon="@drawable/ic_looks_two_black_24dp"
+        android:title="player 2"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/btn_tally"
+        android:icon="@drawable/ic_list_black_24dp"
+        android:title="Tally"
+        app:showAsAction="always" />
+</menu>
