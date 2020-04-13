@@ -21,7 +21,7 @@ public class screen2 extends Fragment {
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View v = inflater.inflate(R.layout.fragment_dice_screen, container, false);
+        View v = inflater.inflate ( R.layout.fragment_dice_screen, container,false);
 
         imageViewDice = v.findViewById ( R.id.IV_diceresult ); //
         dice_roll = v.findViewById(R.id.btn_roll);
