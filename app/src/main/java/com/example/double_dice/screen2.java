@@ -19,12 +19,14 @@ public class screen2 extends Fragment {
     Button dice_roll; //button of the dice
     ImageView imageViewDice; //image of the dice from mipmap
 
-    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        imageViewDice = imageViewDice.findViewById ( R.id.IV_diceresult ); //
-        dice_roll = dice_roll.findViewById(R.id.btn_roll);
+        View v = inflater.inflate(R.layout.fragment_dice_screen, container, false);
+
+        imageViewDice = v.findViewById ( R.id.IV_diceresult ); //
+        dice_roll = v.findViewById(R.id.btn_roll);
         dice_roll.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
                 roll(); // when click this button it will trigger the function roll()
@@ -32,9 +34,10 @@ public class screen2 extends Fragment {
         });
 
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_dice_screen, container, false);
+        return v;
     }
-        //METHOD TO CALL FUNCTION "roll"
+
+    //METHOD TO CALL FUNCTION "roll"
         private void roll() {
         int rollNumber = (int)(Math.random()*6+1); //set random number by using Math.random()
 
